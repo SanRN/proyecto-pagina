@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script >
-        tailwind.config = {
-            theme:{
-                extend:{ 
-                    colors:{
-                        azul1: "#4c9ba2S"
-                    }
-                }
-            }
-        }
-    </script>
+    
 </head>
 <body>
-    <div class="bg-black h-12">
-        <div class="float-right  my-2">
-            <button class="text-white bg-red-900 round mx-4">iniciar sesion</button>
-            <button class="text-white round">crear cuenta</button>
-        </div>
-        <div>
-            <ul class="my-2">
-                <li class="inline-block text-whi class=te">inicio</li>
-                <li class="inline-block text-white">buscar</li>
-                <li class="inline-block text-white">crear</li>
-            </ul>
-        </div>
+  <div id="cabezera" class="flex justify-between bg-[#4C9BA2] h-16">
+    <img src="https://static-cse.canva.com/_next/static/assets/logo_w2000xh641_3b021976d60d0277e95febf805ad9fe8c7d6d54f86969ec03b83299084b7cb93.png" alt="" class="w-32 h-12 inline-block my-auto">
+    <div id="navegador" class="inline-block my-auto">
+        <ul>
+            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" ><a href="#presentacion">Inicio</a> </li>
+            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" >Busqueda</li>
+            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" >Crear propuesta</li>
+        </ul>
     </div>
-    <div id="header">
-        hola mundo
+    <div id="contenedor" class="inline-block my-auto">
+        <ul>
+            <li class="inline-block mx-2 border-2 border-[#D7D9CE] rounded-md bg-[#D7D9CE]"><a href="" class="mx-2 my-4">Iniciar secion</a></li>
+            <li class="inline-block mx-2 border-2 border-[#D7D9CE] rounded-md bg-[#D7D9CE]"><a href="" class="mx-2 my-4">Registrarse</a></li>
+        </ul>
     </div>
+  </div>  
+  <div id="presentacion" class="bg-black h-[91vh]">
+
+  </div>
+  <div id="Buscar" class=" h-[91vh]">
+
+  </div>
+  <div id="crearP" class="bg-black h-[91vh]">
+
+  </div>
 </body>
 </html>
