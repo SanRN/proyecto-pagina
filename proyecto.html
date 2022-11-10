@@ -6,33 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    https://east-fine-217.notion.site/Creaci-n-de-paginas-web-3ddba510446a461cbd1992c58d433df0
+    <style type="text/tailwindcss">
+        @layer utilities{
+            .rayas{
+                @apply bg-white h-[10vh] w-[70vh] mx-auto mb-8
+            }
+            .menu{
+                @apply inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150 
+            }
+            .boton{
+                @apply inline-block mx-2 border-2 border-[#D7D9CE] rounded-md bg-[#D7D9CE] hover:bg-[#040404] hover:text-[#D7D9CE]
+            }
+        }
+    </style>
 </head>
 <body>
   <div id="cabezera" class="flex justify-between bg-[#4C9BA2] h-16">
     <img src="https://static-cse.canva.com/_next/static/assets/logo_w2000xh641_3b021976d60d0277e95febf805ad9fe8c7d6d54f86969ec03b83299084b7cb93.png" alt="" class="w-32 h-12 inline-block my-auto">
-    <div id="navegador" class="inline-block my-auto">
+    <div id="navegador" class="inline-block mt-5">
         <ul>
-            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" ><a href="#presentacion">Inicio</a> </li>
-            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" >Busqueda</li>
-            <li class="inline-block mx-8 hover:border-b-2 border-[#D7D9CE] transition-all duration-150" >Crear propuesta</li>
+            <li class="menu" ><a href="#presentacion">Inicio</a> </li>
+            <li class="menu" ><a href="#Buscar">Busqueda</a></li>
+            <li class="menu" ><a href="#crearP">Crear propuesta</a></li>
         </ul>
     </div>
     <div id="contenedor" class="inline-block my-auto">
         <ul>
-            <li class="inline-block mx-2 border-2 border-[#D7D9CE] rounded-md bg-[#D7D9CE]"><a href="" class="mx-2 my-4">Iniciar secion</a></li>
-            <li class="inline-block mx-2 border-2 border-[#D7D9CE] rounded-md bg-[#D7D9CE]"><a href="" class="mx-2 my-4">Registrarse</a></li>
+            <li class="boton"><a href="" class="mx-2 my-4">Iniciar secion</a></li>
+            <li class="boton"><a href="" class="mx-2 my-4">Registrarse</a></li>
         </ul>
     </div>
   </div>  
-  <div id="presentacion" class="bg-black h-[91vh]">
+  <div id="presentacion" class="flex justify-end bg-black h-[91vh] bg-[url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80')] bg-cover">
+    <div id="te" class="bg-white opacity-50 w-[80vh] h-[70vh] my-auto mx-32" > 
+        <h1></h1>
+        <p></p>
+    </div>
+  </div>
+  <div id="Buscar" class="bg-[#040404] h-[81vh] border-t">
 
   </div>
-  <div id="Buscar" class=" h-[91vh]">
+  <div id="crearP" class="bg-[#D7D9CE] h-[81vh] border-t">
+    <div class="bg-[#6e6e6e] w-[81vh] h-[60vh] inline-block float-left mx-[10vh] mt-[10vh] rounded-md pt-7">
+        <div class="rayas"></div>
+        <div class="rayas"></div>
+        <div class="rayas"></div>
+        <div class="rayas"></div>
+    </div>
 
-  </div>
-  <div id="crearP" class="bg-black h-[91vh]">
 
+    <div class="text-[#040404] text-[40px] mt-[20vh] font-semibold text-[] ">
+        crea tus propuestas propias para que lo puedan ver más personas 
+    </div>
   </div>
+    <footer >
+        <div class="bg-[#4C9BA2] h-[30vh] flex justify-between px-8 py-8">
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div>as</div>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="h-[5vh] bg-[#040404]"></div>
+    </footer>
 </body>
 </html>
