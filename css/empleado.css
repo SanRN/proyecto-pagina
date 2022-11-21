@@ -1,7 +1,5 @@
-
 *{
     margin: 0;
-    padding: 0;
     font-family: 'Inter', sans-serif;
 
 }
@@ -15,11 +13,9 @@ header{
     background-color: #294f5a ;
 
 }
-#navegacion {
-    
+#navegacion {  
     display: flex;
     justify-content: space-between;
-
 }
 #navegacion ul li{
     display: inline;
@@ -106,7 +102,7 @@ aside > button:hover{
 position: relative;
 left: 170px;
 }
- input{
+ header > div > input{
     margin-left: 80px;
     padding-left: 10px;
     border-radius: 5px;
@@ -181,6 +177,12 @@ h2{
     
 }
 
+aside >ul{
+
+}
+aside > ul > li > input{
+    margin: 7px;
+}
 
 ul{
     list-style: none;
@@ -294,5 +296,3 @@ footer{
     
     }
 }
-
-  

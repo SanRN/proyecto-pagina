@@ -7,48 +7,91 @@
     <title>empleador</title>
     <link rel="stylesheet" href="css/empleador.css">
     <link rel="shortcut icon" href="/img/Doc1.png">
+    <script src="https://kit.fontawesome.com/9a8a7c6b85.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        </style>
 </head>
 <body>
     
 <header>
-    <img src="https://images.squarespace-cdn.com/content/v1/5f62b687cae73d2408a06539/1602807735303-4W086W30YX6B3D23N04L/image-asset.png" alt="">
-    <nav>
-       
-        <a href="">inicio</a><a href="">Vacantes</a><a href="">Ingresar</a><a href="">Registrarse</a>
-    </nav>
-
+    
+    <div id="navegacion">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <input type="search" id="name" placeholder="buscador">
+        <ul>    
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Vacantes</a></li>
+            <li><a href="">Ingresar</a></li>
+            <li><a href="">Registrarse</a></li>
+        </ul>
+        <img src="https://cdn-icons-png.flaticon.com/512/60/60753.png" alt="campana" id="campana">
+        <div class="fas fa-user-alt" id="icono-perfil"></div>
+    </div>
 
 </header>
 
 <aside>
-
+    <label for="">Filtrar publicaciones:</label>
+    <input type="text" id="ofertas"><br>
+    <button>Buscar</button>
+    <div id="aplicantes">
+        <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>  
+        <hr>  
+        <ul>
+            <li>Mano de obra en la calle 2414-12   3</li>
+            <li>Se busca conserje  4</li> 
+            <li>Se necesita señora del aseo  0</li>
+        </ul>
+    </div>
 </aside>
-    
+<div id="crearPublicacion">
+    <label for="">Crear publicacion</label>
+</div>
 <div class="fondo">
-    <div class="a">
- <div class="loDemas">
-    <input type="search" id="name" placeholder="buscador"><br>
+
+ <div class="contenido">
+
+    <div class="cabezera-empleador">
+        <div>
+            <h2>Empleador</h2>
+        <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil">
+        </div>
+        </div>
     <div>
-    <p>oremlorem loresaodjsgjdfsokfpsfadfsadlfsdfsñdkgfs Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque, amet eos nihil, sunt autem ut ratione quibusdam unde nam earum neque asperiores similique aliquam illum, explicabo reprehenderit officia doloremque.
-    </p>        
-    </div>
+    <p>oremlorem loresaodjsgjdfsokfpsfadfsadlfsdfsdkgfs Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque, amet eos nihil, sunt autem ut ratione quibusdam unde nam earum neque asperiores similique aliquam illum, explicabo reprehenderit officia doloremque.
+    </p>  
+        <div class="contenedorImagen">
 
-<div class="cabezera-empleador">
-    <div>
-        <h2>Empleador</h2>
-    <img src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil">
-
-
-    </div>
-    </div>
-
-
+            <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg" alt="imgen de la publicacion">    
+        </div>
+    
+     
+        </div>
 
 
      </div>        
-    </div>
+
    
-</div>
+</div><br>
+
+<footer>
+    <div class="contenedor-footer">
+      <div class="content-foot">
+        <h4>phone</h4>
+        <p>65764389</p>
+      </div>
+      <div class="content-foot">
+        <h4 id="cen">email</h4>
+        <p>info@ElectroAhorro.com</p>
+      </div>
+      <div class="content-foot">
+        <h4>location</h4>
+        <p>Ocaña N.S</p>
+      </div>
+    </div>
+    <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
+  </footer>
 
 
 
