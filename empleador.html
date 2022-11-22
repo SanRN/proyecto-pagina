@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>empleador</title>
-    <link rel="stylesheet" href="css/empleador.css">
-    <link rel="shortcut icon" href="/img/Doc1.png">
-    <script src="https://kit.fontawesome.com/9a8a7c6b85.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-        </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>empleador</title>
+  <link rel="stylesheet" href="css/empleador.css">
+  <link rel="shortcut icon" href="/img/Doc1.png">
+  <script src="https://kit.fontawesome.com/9a8a7c6b85.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  </style>
 </head>
+
 <body>
-    
-<header>
-    
+
+  <header>
+
     <div id="navegacion">
-        <img src="img/logo.png" alt="logo" id="logo">
-        <input type="search" id="name" placeholder="buscador">
-        <ul>    
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Vacantes</a></li>
-            <li><a href="">Ingresar</a></li>
-            <li><a href="">Registrarse</a></li>
-        </ul>
-        <img src="https://cdn-icons-png.flaticon.com/512/60/60753.png" alt="campana" id="campana">
-        <div class="fas fa-user-alt" id="icono-perfil"></div>
+      <img src="img/logo.png" alt="logo" id="logo">
+      <input type="search" id="name" placeholder="buscador">
+      <ul class="li">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Vacantes</a></li>
+        <li><a href="">Ingresar</a></li>
+        <li><a href="">Registrarse</a></li>
+      </ul>
+      <i class="fa-solid fa-bell" id="campana"></i>
+      <div class="fas fa-user-alt" id="campana"></div>
     </div>
 
-</header>
+  </header>
 
-<aside>
+  <aside>
     <label for="">Filtrar publicaciones:</label>
     <input type="text" id="ofertas"><br>
     <button>Buscar</button>
     <div id="aplicantes">
-        <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>  
-        <hr>  
-        <ul>
-            <li>Mano de obra en la calle 2414-12   3</li>
-            <li>Se busca conserje  4</li> 
-            <li>Se necesita señora del aseo  0</li>
-        </ul>
+      <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>
+      <hr>
+      <ul>
+        <li>Mano de obra en la calle 2414-12 3</li>
+        <li>Se busca conserje 4</li>
+        <li>Se necesita señora del aseo 0</li>
+      </ul>
     </div>
-</aside>
-<div id="crearPublicacion">
+  </aside>
+  <div id="crearPublicacion">
     <label for="">Crear publicacion</label>
-</div>
-<div class="fondo">
+  </div>
+  <div class="fondo">
 
- <div class="contenido">
+    <div class="contenido">
 
-    <div class="cabezera-empleador">
+      <div class="cabezera-empleador">
         <div>
-            <h2>Empleador</h2>
-        <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil">
+          <h2>Empleador</h2>
+          <div class="redondo">
+            <div class="fas fa-user-alt" id="icono-perfil1"></div>
+          </div>
+          <!-- <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil"> -->
         </div>
+      </div>
+      <div>
+        <div class="limite-texto">
+          <p>oremlorem loresaodjsgjdfsokfpsfadfsadlfsdfsdkgfs Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aut atque, amet eos nihil, sunt autem ut ratione quibusdam unde nam earum neque asperiores similique aliquam
+            illum, explicabo reprehenderit officia
+            doloremque.cffffgbvbnbvnmvbnmbmvbnggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+            gggggggggggggggggggggggggggggggggggggggggggggggggggg
+          </p>
         </div>
-    <div>
-    <p>oremlorem loresaodjsgjdfsokfpsfadfsadlfsdfsdkgfs Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque, amet eos nihil, sunt autem ut ratione quibusdam unde nam earum neque asperiores similique aliquam illum, explicabo reprehenderit officia doloremque.
-    </p>  
         <div class="contenedorImagen">
-
-            <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg" alt="imgen de la publicacion">    
+          <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
+            alt="imgen de la publicacion">
         </div>
-    
-     
-        </div>
+      </div>
+    </div>
+  </div><br>
 
-
-     </div>        
-
-   
-</div><br>
-
-<footer>
+  <footer>
     <div class="contenedor-footer">
       <div class="content-foot">
         <h4>phone</h4>
@@ -92,8 +100,5 @@
     </div>
     <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
   </footer>
-
-
-
 </body>
 </html>
