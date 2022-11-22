@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-
 }
 
 body {
@@ -47,6 +46,9 @@ header {
     font-size: 22px;
     margin: 15px;
     margin-right: 30px;
+}
+#campana:hover{
+    color: #000531;
 }
 
 #logo {
@@ -164,7 +166,7 @@ h2 {
 
 .redondo {
     border-radius: 100%;
-    background-color: #af20d3;
+    background-color: #294f5a;
     width: 60px;
     height: 60px;
     display: flex;
@@ -217,8 +219,9 @@ h2 {
 }
 
 #crearPublicacion> button:hover {
-    background-color: rgb(207, 184, 184);
-    color: black;
+    /* background-color: rgb(207, 184, 184); */
+    background-color: rgb(27, 27, 202);
+    color: white;
 }
 
 #crear-publicacion{
@@ -239,20 +242,23 @@ ul {
 #icono-perfil:hover {
     color: #162225;
 }
+.entrada{
+    display: inline-block;
+}
 
-/* foter */
-/* footer */
-footer {
-    background: #414141;
+footer{
+    background-color: #536368;
+}
+.fin {
     padding: 60px 0 30px 0;
     margin: auto;
 
 }
 
 .contenedor-footer {
-
     display: flex;
     width: 90%;
+    height: 30px;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
@@ -280,11 +286,6 @@ footer {
     margin: 20px 0 0 0;
     color: #9e9797;
 }
-
-footer {
-    margin-top: 460px;
-}
-
 @media (max-width: 1299px) {
     .fondo {
         margin: 15px;

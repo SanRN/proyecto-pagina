@@ -36,97 +36,113 @@
 
   </header>
 
-  <aside>
-    <label for="">Filtrar publicaciones:</label>
-    <input type="text" id="ofertas"><br>
-    <button>Buscar</button>
-    <div id="aplicantes">
-      <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>
-      <hr>
-      <ul>
-        <li>Mano de obra en la calle 2414-12 3</li>
-        <li>Se busca conserje 4</li>
-        <li>Se necesita señora del aseo 0</li>
-      </ul>
+  <div class="entrada">
+    <aside>
+      <label for="">Filtrar publicaciones:</label>
+      <input type="text" id="ofertas"><br>
+      <button>Buscar</button>
+      <div id="aplicantes">
+        <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>
+        <hr>
+        <ul>
+          <li>Mano de obra en la calle 2414-12 3</li>
+          <li>Se busca conserje 4</li>
+          <li>Se necesita señora del aseo 0</li>
+        </ul>
+      </div>
+    </aside>
+    <div id="crearPublicacion">
+      <!-- <label for="">Crear publicacion</label> -->
+      <button onclick="crearPublicacion()" id="crear-publicacion">Crear publicacion</button>
     </div>
-  </aside>
-  <div id="crearPublicacion">
-    <!-- <label for="">Crear publicacion</label> -->
-    <button onclick="crearPublicacion()" id="crear-publicacion">Crera publicacion</button>
+    <div class="fondo">
+
+      <div class="contenido">
+
+        <div class="cabezera-empleador">
+          <div>
+            <h2>Usuario Empleador</h2>
+            <div class="redondo">
+              <div class="fas fa-user-alt" id="icono-perfil1"></div>
+            </div>
+            <!-- <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil"> -->
+          </div>
+        </div>
+        <div>
+          <div class="limite-texto">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aliquam consequuntur est! Qui
+              architecto aspernatur exercitationem obcaecati! Dolorum possimus praesentium odit sapiente facilis, a
+              blanditiis nemo ratione quae neque reprehenderit.
+              Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati
+              adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos
+              consequatur!
+              Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero
+              illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum
+              itaque quam? Laudantium!
+            </p>
+          </div>
+          <div class="contenedorImagen">
+            <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
+              alt="imgen de la publicacion">
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+    <div class="fondo">
+
+      <div class="contenido">
+
+        <div class="cabezera-empleador">
+          <div>
+            <h2>Usuario Empleador</h2>
+            <div class="redondo">
+              <div class="fas fa-user-alt" id="icono-perfil1"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="limite-texto">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aliquam consequuntur est! Qui
+              architecto aspernatur exercitationem obcaecati! Dolorum possimus praesentium odit sapiente facilis, a
+              blanditiis nemo ratione quae neque reprehenderit.
+              Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati
+              adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos
+              consequatur!
+              Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero
+              illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum
+              itaque quam? Laudantium!
+            </p>
+          </div>
+          <div class="contenedorImagen">
+            <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
+              alt="imgen de la publicacion">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="fondo">
-
-    <div class="contenido">
-
-      <div class="cabezera-empleador">
-        <div>
-          <h2>Usuario Empleador</h2>
-          <div class="redondo">
-            <div class="fas fa-user-alt" id="icono-perfil1"></div>
-          </div>
-          <!-- <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil"> -->
-        </div>
-      </div>
-      <div>
-        <div class="limite-texto">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aliquam consequuntur est! Qui architecto aspernatur exercitationem obcaecati! Dolorum possimus praesentium odit sapiente facilis, a blanditiis nemo ratione quae neque reprehenderit.
-          Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos consequatur!
-          Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum itaque quam? Laudantium!
-          </p>
-        </div>
-        <div class="contenedorImagen">
-          <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
-            alt="imgen de la publicacion">
-        </div>
-      </div>
-    </div>
-  </div><br><br>
-
-  <div class="fondo">
-
-    <div class="contenido">
-
-      <div class="cabezera-empleador">
-        <div>
-          <h2>Usuario Empleador</h2>
-          <div class="redondo">
-            <div class="fas fa-user-alt" id="icono-perfil1"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="limite-texto">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus aliquam consequuntur est! Qui architecto aspernatur exercitationem obcaecati! Dolorum possimus praesentium odit sapiente facilis, a blanditiis nemo ratione quae neque reprehenderit.
-          Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos consequatur!
-          Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum itaque quam? Laudantium!
-          </p>
-        </div>
-        <div class="contenedorImagen">
-          <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
-            alt="imgen de la publicacion">
-        </div>
-      </div>
-    </div>
-  </div><br><br><br><br><br><br>
-
-
   <footer>
-    <div class="contenedor-footer">
-      <div class="content-foot">
-        <h4>phone</h4>
-        <p>65764389</p>
+    <div class="fin">
+      <div class="contenedor-footer">
+        <div class="content-foot">
+          <h4>phone</h4>
+          <p>65764389</p>
+        </div>
+        <div class="content-foot">
+          <h4 id="cen">email</h4>
+          <p>info@ElectroAhorro.com</p>
+        </div>
+        <div class="content-foot">
+          <h4>location</h4>
+          <p>Ocaña N.S</p>
+        </div>
       </div>
-      <div class="content-foot">
-        <h4 id="cen">email</h4>
-        <p>info@ElectroAhorro.com</p>
-      </div>
-      <div class="content-foot">
-        <h4>location</h4>
-        <p>Ocaña N.S</p>
-      </div>
+      <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
     </div>
-    <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
   </footer>
   <script src="js/empleador.js"></script>
 </body>
+
 </html>
