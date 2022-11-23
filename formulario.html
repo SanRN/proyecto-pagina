@@ -6,49 +6,207 @@
     <meta name="viewport" content="width=}, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="/img/Doc1.png">
+    <link rel="stylesheet" href="css/formulario.css">
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body class="bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a]" >
-    <div id="titulo" class="mt-16 text-center text-white font-semibold text-4xl">
-        Formulario de Cuenta
-    </div>
-    <div class="mx-auto my-8 w-[95vh] h-[70vh] border-2 rounded-md bg-white shadow-xl" >
-        <div class=" float-left ">
-            <div>
-                <input type="text" id="nom" class="border-[1px]  border-black mx-4 my-4 rounded-md pl-2 bg-[#D7D9CE]" placeholder="Nombre">
-                <input type="text" id="ap" class="border-[1px] border-black  mx-4 my-4 rounded-md pl-2 bg-[#D7D9CE]" placeholder="Apellido">
-            </div>
-            <div>
-                <select name="tipo documento" id="docT" class="mx-4 my-4 rounded-md pl-2 border-[1px] border-black bg-[#D7D9CE]">
-                    <option value="1">cedula de ciudadania</option>
-                    <option value="2">Tarjeta de Identidad</option>
-                    <option value="3">pasaporte Extranjero</option>
-                </select>
-                <input type="text" id="doc" class="inline-block border-[1px] border-black mx-8 my-4 rounded-md pl-2 bg-[#D7D9CE]" placeholder="N° documento">
-            </div>
-            <div>
-                <input type="number" id="edad" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 w-16 bg-[#D7D9CE]" min="8" placeholder="Edad">
-                <input type="date" id="fecha" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 bg-[#D7D9CE]">
-                Genero:
-                <input type="radio" id="sexo" class="border-2 mx-2" name="sexo" >F
-                <input type="radio" id="sexo" class="border-2 mx-2" name="sexo" >M
-            </div>
-            <input type="text" id="dir" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 w-80 bg-[#D7D9CE]" placeholder="Direccion">
-            <br>
-            <input type="email" id="Email" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 w-80 bg-[#D7D9CE]" placeholder="Correo electronico">
-            <div>
-                <input type="password" id="contra" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 bg-[#D7D9CE]" placeholder="Contraceña">
-                <input type="password" id="contraF" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 bg-[#D7D9CE]" placeholder="Confirmacion">
-            </div>
-            <input type="tel" id="tel" class="inline-block border-[1px] border-black mx-4 my-4 rounded-md pl-2 w-36 bg-[#D7D9CE]" placeholder="N° telefono">
-            <select  name="" id="tipo" class="mx-4 my-4 rounded-md pl-2 border-[1px] border-black bg-[#D7D9CE]" aria-placeholder="tipo">
-                <option value="0"></option>
-                <option value="1">Aplicante</option>
-                <option value="2">Empleador</option>
-            </select>
-            <button id="inicio" class="flex text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-4 mt- bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#294f5a] hover:via-[#377185] hover:to-[#4c9ba2] transition-all duration-300 "> Iniciar </button>
+    <img src="img/logo.png" alt="" class="w-20 mx-auto">
+    <div class="mx-auto my-8 w-[95vh] h-[78vh] border-2 rounded-md bg-white shadow-xl" >
+        <div id="titulo" class="my-2 mx-4 text-[#4C9BA2] font-semibold text-xl ">
+            Registro
         </div>
-        <img src="img/logo.png" alt="" class="w-36 h-36 mt-36  ">
+        <div class="px-4 py-2">
+            <div>
+                <div class="inline-block mr-10">
+                    <div class="relative z-0  mb-5">
+                        <input
+                            type="text"
+                            name="nombre"
+                            placeholder=" "
+                            class="pt-3 pb-2 w-64 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Nombre</label>
+                        <span class="text-sm text-red-600 hidden" id="error">El nombre es requerido</span>
+                    </div>
+                </div>
+                <div class="inline-block mr-2">
+                    <div class="relative z-0  mb-5">
+                        <input
+                            type="text"
+                            name="apellido"
+                            placeholder=" "
+                            class="pt-3 pb-2 w-64 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="apellido" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Apellidos</label>
+                        <span class="text-sm text-red-600 hidden" id="error">los apellidos es requerido</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5 mr-12">
+                        <select
+                        name="select"
+                        value=""
+                        onclick="this.setAttribute('value', this.value);"
+                        class="pt-3 w-20 text-center pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">CC</option>
+                        <option value="2">TI</option>
+                        <option value="3">CE</option>
+                        </select>
+                        <label for="select" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">ID</label>                           
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5">
+                        <input
+                            type="tel"
+                            name="Ndoc"
+                            placeholder=" "
+                            class="pt-3 pb-2 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="Ndoc" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">N° documento</label>
+                        <span class="text-sm text-red-600 hidden" id="error">El N° documento es requerido</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inline-block">
+                    <div class="inline-block">
+                        <div class="relative z-0  mb-5 mr-10">
+                            <input
+                                type="number"
+                                name="Edad"
+                                placeholder=" "
+                                class="pt-3 pb-2 w-16 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                            />
+                            <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Edad</label>
+                            <span class="text-sm text-red-600 hidden" id="error">El nombre es requerido</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <div class="flex flex-row space-x-4 mr-10">
+                        <div class="relative z-0  mb-5">
+                            <input
+                            type="text"
+                            name="date"
+                            placeholder=" "
+                            onclick="this.setAttribute('type', 'date');"
+                            class="pt-3 pb-2 block w-40 px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                            />
+                            <label for="date" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Fecha de nacimiento</label>
+                            <span class="text-sm text-red-600 hidden" id="error">La fecha de nacimiento es requerida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <fieldset class="relative z-0 w-full p-px mb-5">
+                        <legend class="absolute text-gray-500 transform scale-75 -top-3 origin-0">Escoge una opción</legend>
+                        <div class="block pt-3 pb-2 space-x-4">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="radio"
+                                    value="1"
+                                    class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+                                />
+                                Hombre
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="radio"
+                                    value="2"
+                                    class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
+                                />
+                                Mujer
+                            </label>
+                        </div>
+                        <span class="text-sm text-red-600 hidden" id="error">Debes seleccionar una opción</span>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="relative z-0  mb-5">
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder=" "
+                    class="pt-3 pb-2 w-72 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                />
+                <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">direccion</label>
+                <span class="text-sm text-red-600 hidden" id="error">La direccion es requerida</span>
+            </div>
+            <div class="relative z-0  mb-5">
+                <input
+                    type="email"
+                    name="nombre"
+                    placeholder=" "
+                    class="pt-3 pb-2 w-72 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                />
+                <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Email</label>
+                <span class="text-sm text-red-600 hidden" id="error">El email es requerido</span>
+            </div>
+            <div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5 mr-10">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder=" "
+                            class="pt-3 pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="password" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Contraseña</label>
+                        <span class="text-sm text-red-600 hidden" id="error">La contraseña es requerida</span>
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder=" "
+                            class="pt-3 pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="password" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Confirmacion</label>
+                        <span class="text-sm text-red-600 hidden" id="error">La Confirmacion es requerida</span>
+                    </div>
+                </div>
+            </div>
+           <div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5 mr-10">
+                        <select
+                        name="select"
+                        value=""
+                        onclick="this.setAttribute('value', this.value);"
+                        class="pt-3 pb-2 block w-20 px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        >
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">Empleador</option>
+                        <option value="2">Aplicante</option>
+                        </select>
+                        <label for="select" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Tipo</label>                           
+                    </div>
+                </div>
+                <div class="inline-block">
+                    <div class="relative z-0  mb-5">
+                        <input
+                            type="tel"
+                            name="nombre"
+                            placeholder=" "
+                            class="pt-3 pb-2 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+                        />
+                        <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Telefono</label>
+                        <span class="text-sm text-red-600 hidden" id="error">El telefono es requerido</span>
+                    </div>
+                </div>
+                <button id="inicio" class="inline-block ml-40 text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-4 mt- bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 "> Iniciar </button>
+           </div>
+            
+        </div>
     </div>
 </body>
 </html>
