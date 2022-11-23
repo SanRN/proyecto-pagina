@@ -60,11 +60,14 @@ header {
 
 input {
     outline: none;
-    border: 1px solid gray;
+    transition: 0.3s;
 }
 
-input:focus {
+#name:focus, #ofertas:focus {
     border: 1px solid blue;
+}
+#names:focus{
+    border: 1px solid blue; 
 }
 
 .contenedorImagen {
@@ -212,7 +215,7 @@ h2 {
     float: left;
     color: black;
     padding: 10px;
-    width: 71.5%;
+    width: 73%;
     text-align: center;
     border-radius: 8px;
 
@@ -292,7 +295,7 @@ footer{
         color: black;
         width: 68%;
         height: 500px;
-        background-color: rgb(238, 222, 222);
+        background-color: #D7D9CE; 
         float: left;
         display: flex;
         padding: 10px;
@@ -329,7 +332,7 @@ footer{
         color: black;
         width: 63%;
         height: 500px;
-        background-color: rgb(238, 222, 222);
+        background-color: #D7D9CE;
         float: left;
         display: flex;
         padding: 10px;

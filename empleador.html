@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +19,6 @@
 </head>
 
 <body>
-
-
   <header>
     <div id="navegacion">
       <img src="img/logo.png" alt="logo" id="logo">
@@ -29,13 +26,12 @@
       <ul class="li">
         <li><a href="">Inicio</a></li>
         <li><a href="">Vacantes</a></li>
-        <li><a href="">Ingresar</a></li>
-        <li><a href="">Registrarse</a></li>
+        <li><a href="">Historial</a></li>
+        <li><a href="">Salir</a></li>
       </ul>
       <i class="fa-solid fa-bell" id="campana"></i>
       <div class="fas fa-user-alt" id="campana"></div>
     </div>
-
   </header>
 
   <div class="entrada">
@@ -55,32 +51,42 @@
         </div>
       </aside>
     </div>
+<<<<<<< HEAD
     <div id="crearPublicacion" >
       <!-- <label for="">Crear publicacion</label> -->
 
+=======
+    <div id="crearPublicacion">
+>>>>>>> 7bcfe914f710c062748c3894c472393d93c39ab9
       <div class="contenedor">
         <article>
           <button id="btn-abrir-popup" class=" px-4 rounded-md py-2 text-[#D7D9CE] hover:text-white bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 " >Crear publicacion</button>
         </article>
 
         <div class="overlay" id="overlay">
-          <div class="popup" id="popup">
+          <div class="popup" id="popup" style="background-color: rgb(192, 189, 235);">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <h3 style="color: rgb(37, 47, 134);">Crear publicación</h3>
 
               <div class="contenedor-inputs">
+<<<<<<< HEAD
                 <textarea name="" id="texto-area" cols="30" rows="10" placeholder="¿Qué trabajo Ofreces?"></textarea>
                   <input accept="image/png,image/jpeg" type="file" id="imagen1" name="imagen">
                   <input type="submit" onclick="ese()" name="subir" id="boton" value="subir"> 
                 <!-- <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo"> -->
+=======
+                <form action="">
+
+                  <textarea name="" id="texto-area" cols="30" rows="10" placeholder="¿Qué trabajo Ofreces?"></textarea>
+                    <input accept="image/png,image/jpeg" type="file" id="imagen1" name="imagen">
+                    <input type="submit" onclick="ese()" name="subir" id="boton" value="subir">
+                </form>
+>>>>>>> 7bcfe914f710c062748c3894c472393d93c39ab9
               </div>
-              <!-- <button  class="btn-submit">Enviar</button> -->
-              <!-- <input type="submit" onclick="ese()"  value="Enviar"> -->
           </div>
         </div>
       </div>
-      <!-- <button onclick="crearPublicacion()" id="crear-publicacion">Crear publicacion</button> -->
     </div>
     <div class="fondo">
 
@@ -114,9 +120,7 @@
     </div><br><br>
 
     <div class="fondo">
-
       <div class="contenido">
-
         <div class="cabezera-empleador">
           <div>
             <h2>Usuario Empleador</h2>
@@ -164,8 +168,7 @@
     </div>
 
   </footer>
-  <script src="js/empleador.js"></script>
-  <script src="js/popup.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
