@@ -8,10 +8,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="/img/Doc1.png">
     <link rel="stylesheet" href="css/animacion.css">
-    <link rel="stylesheet" href="css/empleador.css">
+    <!-- <link rel="stylesheet" href="css/empleador.css"> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        footer{
+    background-color: #536368;
+}
+.fin {
+    padding: 60px 0 30px 0;
+    margin: auto;
+
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    height: 30px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
      </style>
     <style type="text/tailwindcss">
         @layer utilities{
@@ -43,7 +83,7 @@
         </div>
         <div id="contenedor" class="inline-block my-auto">
             <ul>
-                <li class="boton text-black hover:text-white hover:border-0 hover:bg-gradient-to-r hover:from-[#294f5a] hover:via-[#377185] hover:to-[#4c9ba2] transition-all duration-300 "><a href="formularioIni.html" class=" mx-2 my-4">Iniciar secion</a></li>
+                <li class="boton text-black hover:text-white hover:border-0 hover:bg-gradient-to-r hover:from-[#294f5a] hover:via-[#377185] hover:to-[#4c9ba2] transition-all duration-300 "><a href="formularioIni.html" class=" mx-2 my-4">Iniciar sesión</a></li>
                 <li class="boton text-black hover:text-white hover:border-0 hover:bg-gradient-to-r  hover:from-[#294f5a] hover:via-[#377185] hover:to-[#4c9ba2] transition-all duration-300"><a href="formulario.html" class="mx-2 my-4">Registrarse</a></li>
             </ul>
         </div>
@@ -51,9 +91,9 @@
       <div id="presentacion" class="flex justify-end bg-black h-[91vh] bg-[url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80')] bg-cover">
         <div id="te" class="rounded-md backdrop-brightness-125 bg-white/30  w-[80vh] h-[70vh] my-auto mx-32" > 
             <h1 class=" text-[#4C9BA2] font-bold text-[30px] text-center mt-2 mb-4 opacity-1"> Unete a</h1>
-            <p class="text-black mx-8 mb-14 font-semibold"> es una pagina </p>
+            <p class="text-black mx-8 mb-14 font-semibold"> apguina sentrada en el trabajo informal en el sector de Norte de santander </p>
             <br>
-            <a href="formularioIni.html"><button class= "text-[30px] border-0  text-[#D7D9CE] hover:text-white mx-auto flex border-[1px] rounded-md px-12 mt-8 bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 ">Ingresa</button></a>
+            <a href="formularioIni.html" class="flex justify-end mr-2"><button class= "text-[30px] border-0  text-[#D7D9CE] hover:text-white  flex border-[1px] rounded-md px-12 mt-8 bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 ring-0 ">Ingresa</button></a>
         </div>
       </div>
       <div id="Buscar" class="bg-[#040404] h-[81vh] border-t relative overflow-hidden">
@@ -79,7 +119,7 @@
             <div id="contenido" class="flex">
                 <div id="text" class="inline-block text-white text-4xl font-semibold my-36 mx-8">
                     <h1 class="">Busca posibles ofertas laborales</h1>
-                    <h1 class="">segun tus habilidades</h1>
+                    <h1 class="">según tus habilidades</h1>
                     <input type="text" class="w-96 h-10 my-8 rounded-lg text-black border-0 text-base text-center outline-none">
                     <button class="bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 rounded-full h-10 w-10 "><img src="img/logoLupa.png" alt="" class="w-4 h-4 mx-auto"></button>
                 </div>
@@ -91,15 +131,15 @@
       </div>
       <div id="crearP" class="bg-[#D7D9CE] h-[81vh] border-t">
         <div class="bg-[#6e6e6e] w-[81vh] h-[60vh] inline-block float-left mx-[10vh] mt-[10vh] rounded-md pt-7">
-            <div class="rayas pt-[-1px] overflow-hidden"><img class="inline-block rounded-full w-20" src="img/user1.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
-            <div class="rayas pt-[-1px] overflow-hidden"><img class="inline-block rounded-full w-20" src="img/user2.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
-            <div class="rayas pt-[-1px] overflow-hidden"><img class="inline-block rounded-full w-20" src="img/user3.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
-            <div class="rayas pt-[-1px] overflow-hidden"><img class="inline-block rounded-full w-20" src="img/user4.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
+            <div class="rayas pt-[2px] overflow-hidden"><img class="inline-block ml-2 rounded-full w-16" src="img/user1.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
+            <div class="rayas pt-[2px] overflow-hidden"><img class="inline-block ml-2 rounded-full w-16" src="img/user2.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
+            <div class="rayas pt-[2px] overflow-hidden"><img class="inline-block ml-2 rounded-full w-16" src="img/user3.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
+            <div class="rayas pt-[2px] overflow-hidden"><img class="inline-block ml-2 rounded-full w-16" src="img/user4.png" alt=""> <p class="inline-block font-[Sarina] font-semibold text-black">empleos de diferest maneras y formas</p></div>
         </div>
     
     
         <div class="text-[#040404] text-[35px] mt-[20vh] font-semibold ">
-            Crea tus propuestas propias para que lo puedan ver más personas 
+            Crea tus propias propuestas <br>laborales para que lo puedan ver más personas 
             <br>
             <a href="formularioIni.html"><button class=" text-[30px]  text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-12 mt-8 bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300">Crear</button></a>
         </div>
@@ -110,16 +150,16 @@
     <div class="fin">
       <div class="contenedor-footer">
         <div class="content-foot">
-          <h4>phone</h4>
-          <p>65764389</p>
+          <h4 class="text-white">Phone</h4>
+          <p class="text-white">65764389</p>
         </div>
         <div class="content-foot">
-          <h4 id="cen">email</h4>
-          <p>info@ElectroAhorro.com</p>
+          <h4 class="text-white" id="cen">Email</h4>
+          <p class="text-white">info@ElectroAhorro.com</p>
         </div>
         <div class="content-foot">
-          <h4>location</h4>
-          <p>Ocaña N.S</p>
+          <h4 class="text-white">Location</h4>
+          <p class="text-white">Ocaña N.S</p>
         </div>
       </div>
       <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
