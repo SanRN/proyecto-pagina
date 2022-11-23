@@ -22,6 +22,7 @@
                         <input
                             type="text"
                             name="nombre"
+                            id="nombre"
                             placeholder=" "
                             class="pt-3 pb-2 w-64 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
@@ -34,6 +35,7 @@
                         <input
                             type="text"
                             name="apellido"
+                            id="apellido"
                             placeholder=" "
                             class="pt-3 pb-2 w-64 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
@@ -48,6 +50,7 @@
                         <select
                         name="select"
                         value=""
+                        id="doc"
                         onclick="this.setAttribute('value', this.value);"
                         class="pt-3 w-20 text-center pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         >
@@ -64,6 +67,7 @@
                         <input
                             type="tel"
                             name="Ndoc"
+                            id="Ndoc"
                             placeholder=" "
                             class="pt-3 pb-2 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
@@ -80,6 +84,7 @@
                                 type="number"
                                 name="Edad"
                                 placeholder=" "
+                                id="edad"
                                 class="pt-3 pb-2 w-16 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                             />
                             <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Edad</label>
@@ -94,6 +99,7 @@
                             type="text"
                             name="date"
                             placeholder=" "
+                            id="fecha"
                             onclick="this.setAttribute('type', 'date');"
                             class="pt-3 pb-2 block w-40 px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                             />
@@ -110,7 +116,8 @@
                                 <input
                                     type="radio"
                                     name="radio"
-                                    value="1"
+                                    id="sexo"
+                                    value="m"
                                     class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
                                 />
                                 Hombre
@@ -119,7 +126,8 @@
                                 <input
                                     type="radio"
                                     name="radio"
-                                    value="2"
+                                    id="sexo"
+                                    value="f"
                                     class="mr-2 text-black border-2 border-gray-300 focus:border-gray-300 focus:ring-black"
                                 />
                                 Mujer
@@ -133,6 +141,7 @@
                 <input
                     type="text"
                     name="nombre"
+                    id="dic"
                     placeholder=" "
                     class="pt-3 pb-2 w-72 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 />
@@ -143,6 +152,7 @@
                 <input
                     type="email"
                     name="nombre"
+                    id="email"
                     placeholder=" "
                     class="pt-3 pb-2 w-72 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                 />
@@ -155,6 +165,7 @@
                         <input
                             type="password"
                             name="password"
+                            id="cont"
                             placeholder=" "
                             class="pt-3 pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
@@ -167,6 +178,7 @@
                         <input
                             type="password"
                             name="password"
+                            id="cont2"
                             placeholder=" "
                             class="pt-3 pb-2 block  px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
@@ -181,6 +193,7 @@
                         <select
                         name="select"
                         value=""
+                        id="tipo"
                         onclick="this.setAttribute('value', this.value);"
                         class="pt-3 pb-2 block w-20 px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         >
@@ -197,16 +210,20 @@
                             type="tel"
                             name="nombre"
                             placeholder=" "
+                            id="tel"
                             class="pt-3 pb-2 block px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                         />
                         <label for="nombre" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Telefono</label>
                         <span class="text-sm text-red-600 hidden" id="error">El telefono es requerido</span>
                     </div>
                 </div>
-                <button id="inicio" class="inline-block ml-40 text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-4 mt- bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 "> Iniciar </button>
+                <a href="empleador.html"><button id="inicio" class="inline-block ml-40 text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-8 py-2 bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 "> Iniciar </button></a>
+                <a href="empleado.html"><button id="inicio" class="inline-block ml-40 text-[#D7D9CE] hover:text-white mx-auto border-[1px] rounded-md px-8 py-2 bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 hidden"> Iniciar </button></a>
            </div>
             
         </div>
     </div>
+    <script src="js/empleador.js"></script>
+
 </body>
 </html>
