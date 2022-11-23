@@ -28,7 +28,8 @@ header {
 #navegacion ul a {
     color: white;
     text-decoration: none;
-    padding: 21px 20px;
+    padding: 16px 20px;
+    padding-top: 29px;
 }
 
 #navegacion ul {
@@ -96,7 +97,7 @@ aside>label {
 }
 
 aside>button {
-    padding: 10px 122px;
+    padding: 10px 113px;
     margin: 10px 5px;
     border: none;
     border-radius: 5px;
@@ -317,10 +318,13 @@ footer{
         color: black;
         padding: 20px;
         padding-bottom: 30px;
-        width: 66.5%;
+        width: 68%;
         text-align: center;
         border-radius: 8px;
 
+    }
+    #imagenPublicacion{
+        width: 300px;
     }
 
 }
@@ -330,7 +334,7 @@ footer{
         margin: 15px;
         border-radius: 8px;
         color: black;
-        width: 63%;
+        width: 64%;
         height: 500px;
         background-color: #D7D9CE;
         float: left;
@@ -354,8 +358,11 @@ footer{
         color: black;
         padding: 20px;
         padding-bottom: 30px;
-        width: 61.5%;
+        width: 64%;
         text-align: center;
         border-radius: 8px;
+    }
+    #imagenPublicacion{
+        width: 250px;
     }
 }
