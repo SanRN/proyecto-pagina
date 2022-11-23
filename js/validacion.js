@@ -16,17 +16,16 @@ function validacion(){
     const l = document.getElementById("tipo").value;
     const n = document.getElementById("tel").value;
     const array=[a ,b, c,d,e,f,g,h,i,j,k,l,n]
-    alert(a)
-    for (let index = 0; index < array.length; index++) {
-        if (array[index]="") {
-            toggleError
+    if(a!="" && b!="" && c!="" && d!="" && e!="" && f!="" && g!="" && h!="" && i!="" && j!="" && k!="" && l!="" && n!="" ){
+        if (l==1) {
+            location.href="empleador.html";
+        } else {
+            location.href="empleado.html";
         }
+    }else{
+        toggleError()
     }
-    if (l==1) {
-        location.href="empleador.html";
-    } else {
-        location.href="empleado.html";
-    }
+   
 }
 
 function toggleError() {
