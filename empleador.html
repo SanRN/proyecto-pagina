@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>empleador</title>
   <link rel="stylesheet" href="css/empleador.css">
+  <link rel="stylesheet" href="css/estilos.css">
   <link rel="shortcut icon" href="/img/Doc1.png">
   <script src="https://kit.fontawesome.com/9a8a7c6b85.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -19,8 +20,8 @@
 
 <body>
 
-  <header>
 
+  <header>
     <div id="navegacion">
       <img src="img/logo.png" alt="logo" id="logo">
       <input type="search" id="name" placeholder="buscador">
@@ -37,23 +38,48 @@
   </header>
 
   <div class="entrada">
-    <aside>
-      <label for="">Filtrar publicaciones:</label>
-      <input type="text" id="ofertas"><br>
-      <button>Buscar</button>
-      <div id="aplicantes">
-        <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>
-        <hr>
-        <ul>
-          <li>Mano de obra en la calle 2414-12 3</li>
-          <li>Se busca conserje 4</li>
-          <li>Se necesita señora del aseo 0</li>
-        </ul>
-      </div>
-    </aside>
+    <div class="limi">
+      <aside>
+        <label for="">Filtrar publicaciones:</label>
+        <input type="text" id="ofertas"><br>
+        <button>Buscar</button>
+        <div id="aplicantes">
+          <label for="" id="solicitudEmpleo">Solicitudes de empleo</label>
+          <hr>
+          <ul>
+            <li>Mano de obra en la calle 2414-12 3</li>
+            <li>Se busca conserje 4</li>
+            <li>Se necesita señora del aseo 0</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
     <div id="crearPublicacion">
       <!-- <label for="">Crear publicacion</label> -->
-      <button onclick="crearPublicacion()" id="crear-publicacion">Crear publicacion</button>
+
+      <div class="contenedor">
+        <article>
+          <button id="btn-abrir-popup" class="btn-abrir-popup">Crear publicacion</button>
+        </article>
+
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3 style="color: rgb(37, 47, 134);">Crear publicación</h3>
+
+              <div class="contenedor-inputs">
+                <textarea name="" id="texto-area" cols="30" rows="10" placeholder="¿Qué trabajo Ofreces?"></textarea>
+                  <input accept="image/png,image/jpeg" type="file" id="imagen1" name="imagen">
+                  <input type="submit" onclick="ese()" name="subir" id="boton" value="subir">
+                <!-- <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo"> -->
+              </div>
+              <!-- <button  class="btn-submit">Enviar</button> -->
+              <!-- <input type="submit" onclick="ese()"  value="Enviar"> -->
+          </div>
+        </div>
+      </div>
+      <!-- <button onclick="crearPublicacion()" id="crear-publicacion">Crear publicacion</button> -->
     </div>
     <div class="fondo">
 
@@ -65,7 +91,6 @@
             <div class="redondo">
               <div class="fas fa-user-alt" id="icono-perfil1"></div>
             </div>
-            <!-- <img id="Empleador"src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-icono-de-perfil-de-instagram.png" alt="" class="perfil"> -->
           </div>
         </div>
         <div>
@@ -76,11 +101,9 @@
               Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati
               adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos
               consequatur!
-              Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero
-              illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum
-              itaque quam? Laudantium!
-            </p>
           </div>
+          <label id="tex1"></label>
+          <img src="" alt="" id="aui">
           <div class="contenedorImagen">
             <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
               alt="imgen de la publicacion">
@@ -109,9 +132,6 @@
               Minima quo harum suscipit fugit nesciunt debitis repudiandae rerum sunt corrupti numquam totam obcaecati
               adipisci est natus nulla, explicabo sequi, fugiat corporis id quas assumenda iusto! Vitae quo quos
               consequatur!
-              Sed quod temporibus aliquid perspiciatis mollitia cumque, ipsa fugit ullam quos quibusdam! Debitis, vero
-              illum aperiam ratione eveniet architecto repudiandae voluptatum officia alias dolorum in culpa nostrum
-              itaque quam? Laudantium!
             </p>
           </div>
           <div class="contenedorImagen">
@@ -141,8 +161,10 @@
       </div>
       <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
     </div>
+
   </footer>
   <script src="js/empleador.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

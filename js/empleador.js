@@ -4,7 +4,10 @@ function crearPublicacion(){
 function asa(){
     let texto = document.getElementById("eso").value;  //para capturar variables
     alert(texto)
+    let imagen = document.getElementById("imagen1").value;
+    
     document.getElementById("eso").focus(); //para posiciones el puntero en el elemento seleccionado
     document.getElementById("eso").value = ""; // para limpiar los campos
     document.getElementById("a").innerHTML = texto; // para asignar el texto captura y enviarlo al html
+    document.getElementById("aui").innerHTML = imagen;
 }
