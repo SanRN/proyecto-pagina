@@ -13,6 +13,7 @@ btnCerrarPopup.addEventListener('click', function(e){
 	e.preventDefault();
 	overlay.classList.remove('active');
 	popup.classList.remove('active');
+	
 
 });
 
@@ -22,6 +23,7 @@ function ese(){
 	// let imagen = document.getElementById("imagen1")
 	// document.getElementById("aui").innerHTML = imagen;
 	document.getElementById("texto-area").value = "";
+	location.href="empleador.html"
 }
 
 
