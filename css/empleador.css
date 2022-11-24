@@ -77,18 +77,23 @@ input {
     padding-top: 20px;
 }
 
-
 .correo{
    margin-left: 68px; 
 }
+.entrada{
+    display: inline-block;
+}
+.cen{
+margin: auto;
 
+}
 
 aside {
     background-color: rgb(38, 39, 39);
-    height: 190vh;
+    height: 900px;
     width: 300px;
     float: left;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 8px;
@@ -125,8 +130,8 @@ aside>button:hover {
 #aplicantes {
     background-color: white;
     color: black;
-    /* margin: 10px; */
-    padding: 20px;
+    padding: 10px;
+    margin: 20px;
     border-radius: 8px;
     height: 200px;
 }
@@ -185,6 +190,19 @@ h1 {
     display: flex;
     float: left;
     margin-right: 20px;
+}
+#Empleador{
+    width: 60px;
+    float: left;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border: solid 1px white;
+}
+#Empleador:hover{
+    border: solid 1px black;
+    box-shadow: 10px black;
 }
 
 .contenido {
@@ -251,9 +269,7 @@ ul {
 #icono-perfil:hover {
     color: #162225;
 }
-.entrada{
-    display: inline-block;
-}
+
 
 footer{
     background-color: #536368;

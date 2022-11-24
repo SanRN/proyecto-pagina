@@ -97,6 +97,10 @@ aside > button:hover{
     width: 100%;
 }
 
+.cen{
+    display: inline-block;
+}
+
 #categorias{
     padding: 10px;
     
@@ -246,9 +250,6 @@ footer{
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
-  }
-  footer{
-    margin-top: 460px;
   }
 
 @media screen and(max-width: 1194px) {
