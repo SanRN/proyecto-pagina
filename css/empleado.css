@@ -61,8 +61,8 @@ header{
 }
 #filtro{
     display: flex;
-    margin: auto;
-    padding: 0px 40px;
+    margin-left: 20px ;
+    padding-right: 70px;
 }
 aside{ 
     background-color: rgb(38, 39, 39);
@@ -79,7 +79,7 @@ aside > label {
     margin: 10px;
 }
 
-aside > button{
+aside > form button{
     padding: 10px 122px;
     margin: 10px 5px;
     border: none;
@@ -98,10 +98,13 @@ aside > button:hover{
 }
 
 #categorias{
-    overflow: scroll;
     padding: 10px;
     
+}   
+#categorias li{
+    padding: 6px 0px;
 }
+#categorias
 .menu{
 position: relative;
 left: 170px;
@@ -127,9 +130,10 @@ left: 170px;
     margin: 10px;
     margin-top: 0px;
     margin-bottom: 40px;
+    border: solid 1px white;
 }
 #Empleador:hover{
-    background-color: rgb(211, 198, 198);
+    border: solid 1px black;
 }
 #contenedorPublicacion{
     margin: 10px;
