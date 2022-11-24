@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>empleador</title>
-  <link rel="stylesheet" href="css/empleador.css">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="shortcut icon" href="/img/Doc1.png">
+  <link rel="stylesheet" href="css/empleador.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="shortcut icon" href="/img/Doc1.png" />
   <script src="https://kit.fontawesome.com/9a8a7c6b85.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
   </style>
 </head>
 
 <body>
   <header>
     <div id="navegacion">
-      <img src="img/logo.png" alt="logo" id="logo">
-      <input type="search" id="name" placeholder="buscador">
+      <img src="img/logo.png" alt="logo" id="logo"/>
+      <input type="search" id="name" placeholder="buscador" class="pl-[8px]" />
       <ul class="li">
         <li><a href="proyecto.html">Inicio</a></li>
         <li><a href="">Vacantes</a></li>
@@ -34,105 +34,129 @@
   </header>
 
   <div class="entrada">
+    <h2 class="text-black text-center mt-[12px] py-[8px] px-[18px] bg-[#5DADE2]  rounded-md"><strong>Mis publicaciones</strong></h2>
     <div class="limi">
       <aside>
         <label for="">Filtrar publicaciones:</label>
-        <input type="text" id="ofertas"><br>
+        <input type="text" id="ofertas" /><br />
         <button>Buscar</button>
         <div id="aplicantes">
           <label for="" id="solicitudEmpleo"><strong>Solicitudes de empleo</strong></label>
-          <hr>
+          <hr />
           <ul>
-            <li>Mano de obra en la calle 2414-12 3</li>
-            <li>Se busca conserje 4</li>
-            <li>Se necesita señora del aseo 0</li>
+            <li >Jornada Diurna <label for=""class="ml-[99px]">4</label></li>
+            <li >Requiere fuerza <label for=""class="ml-[95px]">3</label></li>
+            <li >Medio Completo <label for=""class="ml-[90px]">0</label></li>
+            <li></li>
           </ul>
         </div>
       </aside>
     </div>
     <div class="cen">
-
       <div id="crearPublicacion">
         <div class="contenedor">
           <article>
-            <button id="btn-abrir-popup" class=" px-4 rounded-md py-2 text-[#D7D9CE] hover:text-white bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300 " >Crear publicación</button>
+            <button id="btn-abrir-popup"
+              class="px-4 rounded-md py-2 text-[#D7D9CE] hover:text-white bg-gradient-to-r from-[#4c9ba2] via-[#377185] to-[#294f5a] font-semibold hover:from-[#60c0c8] hover:via-[#4892ac] hover:to-[#3d7485] transition-all duration-300">
+              Crear publicación
+            </button>
           </article>
-  
+
           <div class="overlay" id="overlay">
-            <div class="popup" id="popup" style="background-color: rgb(239, 239, 247);">
+            <div class="popup" id="popup" style="background-color: rgb(239, 239, 247)">
               <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-              <h3 style="color: rgb(37, 47, 134);">Crear publicación</h3>
-  
-                <div class="contenedor-inputs">
-                  <form action="">
-  
-                    <textarea name="" id="texto-area" cols="30" rows="10" placeholder="¿Qué trabajo Ofreces?"></textarea>
-                      <input accept="image/png,image/jpeg" type="file" id="imagen1" name="imagen">
-                      <input type="submit" onclick="ese()" name="subir" id="boton" value="subir">
-                  </form>
-                </div>
+              <h3 style="color: rgb(37, 47, 134)">Crear publicación</h3>
+
+              <div class="contenedor-inputs">
+                <form action="">
+                  <textarea name="" id="texto-area" cols="30" rows="10" placeholder="¿Qué trabajo Ofreces?"></textarea>
+                  <input accept="image/png,image/jpeg" type="file" id="imagen1" name="imagen" /><br />
+                  <select name="" id="" class="my-[15px]">
+                    <option value="" selected disabled hidden>
+                      seleccione categoria publicar
+                    </option>
+                    <option value="">Medio Tiempo</option>
+                    <option value="">Medio Completo</option>
+                    <option value="">Requiere Fuerza</option>
+                    <option value="">Jornada Diurna</option>
+                  </select>
+                  <input type="submit" onclick="ese()" name="subir" id="boton" value="subir" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="fondo">
-  
+        <div class="w-[15px]" style="position: relative; left: 650px; top: 20px">
+          <img src="https://cdn-icons-png.flaticon.com/512/13/13292.png" alt="" />
+        </div>
+
         <div class="contenido">
-  
           <div class="cabezera-empleador">
             <div>
-              <img id="Empleador"
-              src="https://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
-              alt="" class="perfil">
+              <img id="Empleador" src="https://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt=""
+                class="perfil" />
               <!-- <div class="redondo">
                 <div class="fas fa-user-alt" id="icono-perfil1"></div>
               </div> -->
-              <h2 style="font-size: 20px; font-weight: 900;">Usuario Empleador</h2>
-              <h3 class="correo">info2004@gemil.com</h3>
+              <h2 style="font-size: 17px; font-weight: 900">
+                Usuario Empleador
+              </h2>
+              <h3 class="correo" style="font-size: 13px; color: grey; font-weight: 600">
+                Empleador@gemil.com
+              </h3><hr>
             </div>
           </div>
-          <div>
+          <div class="emple">
             <div class="limite-texto">
-              Se necesita Personal para trabajar en una obra con duracion de un año aproximadamente, tengo 8 vacantes para cualquiera interesado o que halla trabajado anteriormente en una obra.(adjunto imagen)
+              <p>
+                Se necesita Personal para trabajar en una obra con duración de
+                un año aproximadamente, tengo 8 vacantes para cualquiera
+                interesado o que halla trabajado anteriormente en una obra.
+              </p>
             </div>
             <label id="tex1"></label>
-            <img src="" alt="" id="aui">
+            <img src="" alt="" id="aui" />
             <div class="contenedorImagen">
               <img id="imagenPublicacion" src="https://mx.habcdn.com/photos/questions/medium/tengo-dudas-173694.jpg"
-                alt="imgen de la publicacion">
+                alt="imgen de la publicacion" />
             </div>
           </div>
         </div>
-      </div><br><br>
-  
+      </div>
+      <br /><br />
+
       <div class="fondo">
         <div class="contenido">
           <div class="cabezera-empleador">
             <div>
-              <img id="Empleador"
-              src="https://assets.stickpng.com/images/585e4beacb11b227491c3399.png"
-              alt="" class="perfil">
+              <img id="Empleador" src="https://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt=""
+                class="perfil" />
               <!-- <div class="redondo">
                 <div class="fas fa-user-alt" id="icono-perfil1"></div>
               </div> -->
-              <h2 style="font-size: 20px; font-weight: 900;">Usuario Empleador</h2>
-              <h3 class="correo">info2004@gemil.com</h3>
+              <h2 style="font-size: 17px; font-weight: 900">
+                Usuario Empleador
+              </h2>
+              <h3 class="correo" style="font-size: 13px; color: grey; font-weight: 600">
+                Empleador@gemil.com
+              </h3><hr>
             </div>
           </div>
-          <div>
+          <div class="emple">
             <div class="limite-texto">
-              <p><strong>Se busca tendero para negocio de ropa</strong>
-              </p>
+              <p><strong>Se busca tendero para negocio de ropa</strong></p>
             </div>
             <div class="contenedorImagen">
-              <img id="imagenPublicacion" src="https://www.sanvicentedechucuri.com/wp-content/uploads/2020/04/cropped-almacen-de-ropa-1.jpg"
-                alt="imagen de la publicacion">
+              <img id="imagenPublicacion"
+                src="https://www.sanvicentedechucuri.com/wp-content/uploads/2020/04/cropped-almacen-de-ropa-1.jpg"
+                alt="imagen de la publicacion" />
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
   <footer>
     <div class="fin">
@@ -152,9 +176,8 @@
       </div>
       <h2 class="titulo-final">&copy;¡Registrate!! es gratis</h2>
     </div>
-
   </footer>
-    <script src="js/popup.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
