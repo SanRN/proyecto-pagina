@@ -54,22 +54,32 @@ header{
     display: flex;
     margin-top: 15px;
 }
+#Salario{
+    display: flex;
+    margin: auto;
+    
+}
+#filtro{
+    display: flex;
+    margin-left: 20px ;
+    padding-right: 70px;
+}
 aside{ 
     background-color: rgb(38, 39, 39);
-    height: 600px;
+    height: 900px;
     width: 300px;
     float: left;
-    margin-top: 15px;
+    margin-top: 9px;
     margin-bottom: 10px ;
     display: inline-block;
     border-radius: 8px;
 }
 aside > label {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 
-aside > button{
+aside > form button{
     padding: 10px 122px;
     margin: 10px 5px;
     border: none;
@@ -86,18 +96,15 @@ aside > button:hover{
     padding: 30px;
     width: 100%;
 }
-#aplicantes{
-    background-color: white;
-    color: black;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    height: 200px;
-}
-#aplicantes li{
-    padding: 3px;
-}
 
+#categorias{
+    padding: 10px;
+    
+}   
+#categorias li{
+    padding: 6px 0px;
+}
+#categorias
 .menu{
 position: relative;
 left: 170px;
@@ -119,15 +126,48 @@ left: 170px;
 #Empleador{
     width: 60px;
     float: left;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border: solid 1px white;
 }
-h2{
-    margin-left: 60px;
+#Empleador:hover{
+    border: solid 1px black;
+}
+#contenedorPublicacion{
+    margin: 10px;
+}
+#contenedorPublicacion h5{
+    font-weight: lighter;
+    color: #6d7374;
+}
+#contenedorPublicacion label{
+    font-weight: bold;
+}
+#etiquetas{
+    margin: 10px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-bottom: solid #162225 1px;
+    
+}
+#etiquetas label{
+    color: rgb(245, 238, 238) ;
+    margin:3px;
+    background-color: rgb(136, 136, 156);
+    border-radius: 15px;
+    padding: 0px 7px; 
+}
+#etiquetas label:hover{
+    color: white;
+    background-color: rgb(65, 65, 138);
 }
 
 .contenido{
     width: 90%;
     float:left;
-    margin: 20px;
+    margin: 8px;
     padding: 1px;
 }
 .perfil{
@@ -137,48 +177,21 @@ h2{
     margin-top: 10px;
 }
 .fondo{
-    margin: 15px;
+    margin: 10px;
+    margin-bottom: 0px;
     border-radius: 8px;
     color: black ;
-    width: 73%;
+    width: 55%;
     height: 500px;
     background-color: rgb(238, 222, 222) ;
     float: left;
     display: flex;
     padding: 10px;
     padding-top:0px;
+    
 }
 #cabezera-Empleador{
     width: 40%;
-}
-#crearPublicacion{
-    margin: 15px;
-    margin-bottom: 0px;
-    background-color: rgb(238, 222, 222) ;
-    float: left;
-    color: black;
-    padding: 20px;
-    padding-bottom: 30px;
-    width: 71.5%;
-    text-align: center;
-    border-radius: 8px;
-
-}
-
-#crearPublicacion label:hover{
-    background-color: rgb(207, 184, 184);
-    padding: 10px;
-    border-radius: 8px;
-    color: black;
-}
-#ofertas{
-    width: 276px;
-    margin: 10px 6px;
-    
-}
-
-aside >ul{
-
 }
 aside > ul > li > input{
     margin: 7px;
@@ -205,7 +218,6 @@ footer{
   }
   
   .contenedor-footer{
-
     display: flex;
     width: 90%;
     justify-content: space-evenly;
