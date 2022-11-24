@@ -30,6 +30,7 @@ header {
     text-decoration: none;
     padding: 16px 20px;
     padding-top: 29px;
+	font-family: 'Raleway';
 }
 
 #navegacion ul {
@@ -53,8 +54,8 @@ header {
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 45px;
     margin-left: 8px;
     margin: auto;
 }
@@ -226,6 +227,7 @@ h1 {
     float: left;
     display: flex;
     padding: 10px;
+    cursor: pointer;
     padding-top: 0px;
 }
 
@@ -269,7 +271,6 @@ ul {
 #icono-perfil:hover {
     color: #162225;
 }
-
 
 footer{
     background-color: #536368;

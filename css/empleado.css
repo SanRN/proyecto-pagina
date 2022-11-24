@@ -1,85 +1,98 @@
-*{
+* {
     margin: 0;
     font-family: 'Inter', sans-serif;
 
 }
-body{
+
+body {
     background-color: #414141;
-    color: white;   
+    color: white;
 }
-header{
+
+header {
     width: 100%;
     height: 60px;
-    background-color: #294f5a ;
+    background-color: #294f5a;
 
 }
-#navegacion {  
+
+#navegacion {
     display: flex;
     justify-content: space-between;
 }
-#navegacion ul li{
+
+#navegacion ul li {
     display: inline;
 }
-#navegacion ul a{
+
+#navegacion ul a {
     color: bisque;
     text-decoration: none;
-    margin: 0px; 
-    padding: 21px 20px;  
+    margin: 0px;
+    padding: 21px 20px;
 }
+
 #navegacion ul {
-    margin: auto; 
+    margin: auto;
 }
- #navegacion ul a:hover{
-    color:white;
+
+#navegacion ul a:hover {
+    color: white;
     background-color: #162225;
     border-bottom: 1px white solid;
 }
-#campana{
+
+#campana {
     font-size: 30px;
     width: 30px;
     height: 30px;
     margin: 15px;
     margin-right: 30px;
 }
-#logo{
-    width: 50px;
-    height: 55px ;
+
+#logo {
+    width: 150px;
+    height: 45px;
     margin-left: 8px;
     margin: auto;
 }
 
 
-.contenedorImagen{
+.contenedorImagen {
     width: 100%;
     display: flex;
     margin-top: 15px;
 }
-#Salario{
+
+#Salario {
     display: flex;
     margin: auto;
-    
+
 }
-#filtro{
+
+#filtro {
     display: flex;
-    margin-left: 20px ;
+    margin-left: 20px;
     padding-right: 70px;
 }
-aside{ 
+
+aside {
     background-color: rgb(38, 39, 39);
     height: 900px;
     width: 300px;
     float: left;
     margin-top: 9px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     display: inline-block;
     border-radius: 8px;
 }
-aside > label {
+
+aside>label {
     display: inline-block;
     margin: 10px;
 }
 
-aside > form button{
+aside>form button {
     padding: 10px 122px;
     margin: 10px 5px;
     border: none;
@@ -89,45 +102,52 @@ aside > form button{
     color: #fff;
     font-weight: 600;
 }
-aside > button:hover{
+
+aside>button:hover {
     background-color: #294f5a;
 }
-#solicitudEmpleo{
+
+#solicitudEmpleo {
     padding: 30px;
     width: 100%;
 }
 
-.cen{
+.cen {
     display: inline-block;
+    background-color: white;
 }
 
-#categorias{
+#categorias {
     padding: 10px;
-    
-}   
-#categorias li{
+
+}
+
+#categorias li {
     padding: 6px 0px;
 }
-#categorias
-.menu{
-position: relative;
-left: 170px;
+
+#categorias .menu {
+    position: relative;
+    left: 170px;
 }
- header > div > input{
+
+header>div>input {
     margin-left: 80px;
     padding-left: 10px;
     border-radius: 5px;
     border: red;
     width: 45%;
-    height: 33px;  
+    height: 33px;
 }
-#imagenPublicacion{
+
+#imagenPublicacion {
     border: solid 1px gray;
     width: 400px;
     border-radius: 15px;
     margin: auto;
 }
-#Empleador{
+
+#Empleador {
     width: 60px;
     float: left;
     border-radius: 50px;
@@ -136,140 +156,155 @@ left: 170px;
     margin-bottom: 40px;
     border: solid 1px white;
 }
-#Empleador:hover{
+
+#Empleador:hover {
     border: solid 1px black;
 }
-#contenedorPublicacion{
+
+#contenedorPublicacion {
     margin: 10px;
 }
-#contenedorPublicacion h5{
+
+#contenedorPublicacion h5 {
     font-weight: lighter;
     color: #6d7374;
 }
-#contenedorPublicacion label{
+
+#contenedorPublicacion label {
     font-weight: bold;
 }
-#etiquetas{
+
+#etiquetas {
     margin: 10px;
     margin-top: 0px;
     padding-bottom: 5px;
     border-bottom: solid #162225 1px;
-    
+
 }
-#etiquetas label{
-    color: rgb(245, 238, 238) ;
-    margin:3px;
+
+#etiquetas label {
+    color: rgb(245, 238, 238);
+    margin: 3px;
     background-color: rgb(136, 136, 156);
     border-radius: 15px;
-    padding: 0px 7px; 
+    padding: 0px 7px;
 }
-#etiquetas label:hover{
+
+#etiquetas label:hover {
     color: white;
     background-color: rgb(65, 65, 138);
 }
 
-.contenido{
+.contenido {
     width: 90%;
-    float:left;
+    float: left;
     margin: 8px;
     padding: 1px;
 }
-.perfil{
+
+.perfil {
     width: 50px;
 }
-#name{
+
+#name {
     margin-top: 10px;
 }
-.fondo{
+
+.fondo {
     margin: 10px;
     margin-bottom: 0px;
     border-radius: 8px;
-    color: black ;
+    color: black;
     width: 55%;
     height: 500px;
-    background-color: rgb(238, 222, 222) ;
+    background-color: rgb(238, 222, 222);
     float: left;
     display: flex;
     padding: 10px;
-    padding-top:0px;
-    
+    padding-top: 0px;
+
 }
-#cabezera-Empleador{
+
+#cabezera-Empleador {
     width: 40%;
 }
-aside > ul > li > input{
+
+aside>ul>li>input {
     margin: 7px;
 }
 
-ul{
+ul {
     list-style: none;
 }
-#icono-perfil{
+
+#icono-perfil {
     margin: auto;
     font-size: 25px;
     margin-right: 15px;
 }
-#icono-perfil:hover{
+
+#icono-perfil:hover {
     color: #162225;
 }
+
 /* foter */
 /* footer */
-footer{
+footer {
     background: #414141;
     padding: 60px 0 30px 0;
     margin: auto;
+    background-color: #536368;
+}
 
-  }
-  
-  .contenedor-footer{
+.contenedor-footer {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
-  }
-  
-  .content-foo{
+}
+
+.content-foo {
     text-align: center;
-  }
-  
-  .content-foo h4{
+}
+
+.content-foo h4 {
     color: #fff;
     border-bottom: 3px solid #af20d3;
     padding-bottom: 5px;
     margin-bottom: 10px;
-  }
-  
-  .content-foo p{
+}
+
+.content-foo p {
     color: #ccc;
-  }
-  
-  .titulo-final{
+}
+
+.titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
-  }
+}
 
 @media screen and(max-width: 1194px) {
-    .fondo{
+    .fondo {
         margin: 15px;
         border-radius: 8px;
-        color: black ;
+        color: black;
         width: 33%;
         height: 500px;
-        background-color: rgb(238, 222, 222) ;
+        background-color: rgb(238, 222, 222);
         float: left;
         display: flex;
         padding: 10px;
-        padding-top:0px;
+        padding-top: 0px;
     }
 
-    #crearPublicacion{
+    #crearPublicacion {
         margin: 15px;
         margin-bottom: 0px;
-        background-color: rgb(238, 222, 222) ;
+        background-color: rgb(238, 222, 222);
         float: left;
         color: black;
         padding: 20px;
@@ -277,28 +312,28 @@ footer{
         width: 33.5%;
         text-align: center;
         border-radius: 8px;
-    
+
     }
 }
 
 @media screen and(max-width: 1176px) {
-    .fondo{
+    .fondo {
         margin: 15px;
         border-radius: 8px;
-        color: black ;
+        color: black;
         width: 53%;
         height: 500px;
-        background-color: rgb(238, 222, 222) ;
+        background-color: rgb(238, 222, 222);
         float: left;
         display: flex;
         padding: 10px;
-        padding-top:0px;
+        padding-top: 0px;
     }
 
-    #crearPublicacion{
+    #crearPublicacion {
         margin: 15px;
         margin-bottom: 0px;
-        background-color: rgb(238, 222, 222) ;
+        background-color: rgb(238, 222, 222);
         float: left;
         color: black;
         padding: 20px;
@@ -306,6 +341,6 @@ footer{
         width: 61.5%;
         text-align: center;
         border-radius: 8px;
-    
+
     }
 }
